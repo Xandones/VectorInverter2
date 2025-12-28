@@ -33,12 +33,12 @@ void ShowVector(std::vector<int>& Vector) // This function displays all elements
 
 void InvertVector(std::vector<int>& Vector)
 {
-    int Size = Vector.size(); // The function size gets the ammount of elements of an array.
-    for (int i = 0; i < Size / 2; ++i) // Since 2 elements will be manipulated at once (ex. 0 e 19), just a loop until half the size is enough.
+    int Size = Vector.size(); // The function size gets the number of elements of an array.
+    for (int i = 0; i < Size / 2; ++i) // Since 2 elements will be manipulated at once (ex.: 0 and 19), just a loop until half the size is enough.
     {
-        int temp = Vector[i];  // The elemements positions will be swaped using a temporary variable 
-        Vector[i] = Vector[Size - 1 - i]; // Each element will be swaped to the element on the position (Size - 1 - i). i is the current element (the 1st is 0).
+        int temp = Vector[i];  // The elements' positions will be swapped using a temporary variable 
+        Vector[i] = Vector[Size - 1 - i]; // Each element will be swapped to the element on the position (Size - 1 - i). i is the current element (the 1st is 0).
         Vector[Size - 1 - i] = temp; 
-        // The function starts swapping the element in position 0 by the element in position 19, then 1 and 18, 2 and 17, 3 and 16 and so on.
+        // The function starts swapping the element in position 0 with the element in position 19, then 1 and 18, 2 and 17, 3 and 16, and so on.
     }
 }
